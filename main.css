@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Jockey+One&family=Ubuntu:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+	background: #EFEFBB;
+	background: linear-gradient(to right, rgb(197, 236, 216), rgb(239, 198, 232));
+	color: #fbf5ed;
+	font-family: 'Jockey One', sans-serif;
+}
+
+.container {
+	padding: 40px;
+	margin: 0 auto;
+}
+
+.image {
+  margin:  0 auto;
+  width: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.pokedex {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	grid-gap: 20px;
+	padding-inline-start: 0;
+}
+
+.card {
+	list-style: none;
+	padding: 40px;
+	color: #222;
+	text-align: center;
+  border: 5px solid #fbf5ed;
+	border-radius: 20px;
+	position: relative;
+}
+
+.card::after {
+	content: "";
+  display: block;
+  width: 50%;
+  height: 45%;
+  border-radius: 100%;
+  background-color: #fff;
+  opacity: .7;
+  position: absolute;
+  top: 15%;
+  left: 25%;
+}
+
+.steel {
+	background-color: #f4f4f4;
+}
+
+.fire {
+	background-color: #fdeddf;
+}
+
+.grass {
+	background-color: #d9f9ce;
+}
+
+.electric {
+	background-color: #e7d9fa;
+}
+
+.water {
+  background-color: #aeffff;
+}
+
+.ice {
+	background-color: #c4e6f6;
+}
+
+.ground {
+	background-color: #d4c9c9;
+}
+
+.rock {
+	background-color: #d5d5d4;
+}
+
+.fairy {
+	background-color: #f7d9f5;
+}
+
+.poison {
+	background-color: #b8ddbf;
+}
+
+.bug {
+	background-color: rgb(184, 212, 206);
+}
+
+.dragon {
+	background-color: #ebf7ff;
+}
+
+.psychic {
+	background-color: #fcfcd6;
+}
+
+.flying {
+	background-color: #F5F5F5;
+}
+
+.fighting {
+	background-color: #b6bbd7;
+}
+
+.normal {
+	background-color: #F5F5F5;
+}
+
+.card:hover {
+	animation: bounce 0.5s linear;
+}
+
+.card-title {
+	text-transform: capitalize;
+	margin-bottom: 0px;
+	font-size: 32px;
+	font-weight: normal;
+	position: relative;
+	z-index: 2;
+}
+
+.card-subtitle {
+	margin-top: 5px;
+	color: #666;
+	font-weight: lighter;
+	position: relative;
+	z-index: 2;
+}
+
+.card-image {
+  max-width: 280px;
+	height: 180px;
+	position: relative;
+	z-index: 2;
+}
+
+#buttonHeart {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 8px;
+  border: none;
+  border-radius: 50%;
+  background-color: transparent;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+#buttonHeart:active:after {
+  content: '❤️';
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 8px;
+  border: none;
+  border-radius: 50%;
+  background-color: transparent;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+#demo{
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 8px;
+  border: none;
+  border-radius: 50%;
+  background-color: transparent;
+  font-size: 24px;
+  z-index: 999;
+}
+
+
+@keyframes bounce {
+	20% {
+			transform: translateY(-6px);
+	}
+	40% {
+			transform: translateY(0px);
+	}
+
+	80% {
+			transform: translateY(-2px);
+	}
+	100% {
+			transform: translateY(0);
+	}
+}
